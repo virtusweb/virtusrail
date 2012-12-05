@@ -1,9 +1,9 @@
 !!! 5
 %html
   %head
-    %title= data.page.title || "Virtus Medical"
+    %title= data.page.title || "Virtus Rail"
     %link(href='http://fonts.googleapis.com/css?family=Questrial&v1' rel='stylesheet' type='text/css')
-    = stylesheet_link_tag "bootstrap","medical","qunit"
+    = stylesheet_link_tag "bootstrap","Rail","qunit"
     = javascript_include_tag  "bootstrap"
    
     %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"}
@@ -48,31 +48,24 @@
                   %ul.nav.nav-list
                
                     %li.nav-header 
-                      %a{:href => "/xlab/xlab.html"} xLab
+                      %a{:href => "/CCT/index.html"} Virtus CCT
                     %li
-                      %a{:href => "/xlab/caracteristicasl.html"} Características Generales
+                      %a{:href => "/CCT/caracteristicas.html"} Características Generales
                     %li
-                      %a{:href => "/xlab/modulosl.html"} Módulos
+                      %a{:href => "/CCT/operacion.html"} Operación
                     %li
-                      %a{:href => "/xlab/funcionalidadl.html"} Funcionalidad
+                      %a{:href => "/CCT/funcionalidad.html"} Funcionalidad
                     %li
-                      %a{:href => "/xlab/xLab.pdf"}
-                        Obtenga información PDF
-                    %li
-                      %a{:href => "/xlab/videosl.html"} Videos de demostración
-                    %li
-                      %a{:href => "/pages/contacto.html"} Solicite Información
+                      %a{:href => "/CCT/contacto.html"} Solicite Información
+                %a.btn.btn-large.btn-primary{:href => "/ETS/index.html"}
+                  Ir a ETS
+                %a.btn.btn-large.btn-primary{:href => "/INTERACTION/index.html"}
+                  Ir a Interaction 
                 
-
-                %a.btn.btn-large.btn-primary{:href => "/xhosp/xhosp.html"}
-                  Ir a xHosp
-                %a.btn.btn-large.btn-primary{:href => "/xray/xray.html"}
-                  Ir a xRay  
-                .imgs
-                  %img{:src => "/images/xlab.jpg", :alt => "Virtus Medical"}         
                 
               .span8.offset1
                 = yield
+
 
               
 

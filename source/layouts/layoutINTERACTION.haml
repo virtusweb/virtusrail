@@ -1,9 +1,9 @@
 !!! 5
 %html
   %head
-    %title= data.page.title || "Virtus Medical"
+    %title= data.page.title || "Virtus Rail"
     %link(href='http://fonts.googleapis.com/css?family=Questrial&v1' rel='stylesheet' type='text/css')
-    = stylesheet_link_tag "bootstrap","medical","qunit"
+    = stylesheet_link_tag "bootstrap","Rail","qunit"
     = javascript_include_tag  "bootstrap"
    
     %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"}
@@ -48,26 +48,21 @@
                   %ul.nav.nav-list
                
                     %li.nav-header 
-                      %a{:href => "/xray/xray.html"} xray
+                      %a{:href => "/INTERACTION/index.html"} Virtus Interaction
                     %li
-                      %a{:href => "/xray/caracteristicasr.html"} Características Generales
+                      %a{:href => "/INTERACTION/caracteristicas.html"} Características Generales
                     %li
-                      %a{:href => "/xray/modulosr.html"} Módulos
+                      %a{:href => "/INTERACTION/operacion.html"} Operación
                     %li
-                      %a{:href => "/xray/funcionalidadr.html"} Funcionalidad
+                      %a{:href => "/INTERACTION/funcionalidad.html"} Funcionalidad
                     %li
-                      %a{:href => "/xray/pdfr.html"} Obtenga información PDF
-                    %li
-                      %a{:href => "/xray/videosr.html"} Videos de demostración
-                    %li
-                      %a{:href => "/xray/contactor.html"} Solicite Información
+                      %a{:href => "/INTERACTION/contactor.html"} Solicite Información
                 
-                %a.btn.btn-large.btn-primary{:href => "/xhosp/xhosp.html"}
-                  Ir a xHosp
-                %a.btn.btn-large.btn-primary{:href => "/xlab/xlab.html"}
-                  Ir a xLab <br/> 
-                .imgs
-                  %img{:src => "/images/xray.jpg", :alt => "Virtus Medical"}       
+                %a.btn.btn-large.btn-primary{:href => "/CCT/index.html"}
+                  Ir a CCT
+                %a.btn.btn-large.btn-primary{:href => "/ETS/index.html"}
+                  Ir a ETS <br/> 
+                                
                 
               .span8.offset1
                 = yield
